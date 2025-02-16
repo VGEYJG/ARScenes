@@ -1,0 +1,469 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=line-simple&renderer=svg&code=PYBwLglsB2AEC8sDeAoWszGAG0iAXMmuhgE4QDmFApqYQOQCGAHhAM73EC-ANMdtRrQAJoVQlYwxmEaEA2vQAqEALbUAtACNGbasPo9Y9AMohGAYw3bd-w_QAKpUMBuw1YABbB9AXT4SIMGoVAHFGAlgARgAGfxJA4IB1CGFPQgBWWOJ0BJUACWpKDzBCGLj0TAiYrIlyCmLS6JqSTWBSYVoAYRw2hgBiAA5ooaGDbNhW9tpk1I9S8omLAGsKJwBXEW7sXqM-gDF0g4Ox8baIamgSowA3WkhzRmwxiUfKaAZGNcxnkiDmMGMYAAngIxON0AAzGBgPaMFQQbBAhjKNRsWAAOWoAHdYAAlYAqRjQH4SKGXYwQABe1FK6QW6HMPToRk02GW9FgAHpObBAJvxgBnEwB90YA7f0AORmAJyDxrxxmZhMIINAKPJIpFDGUorENT4uZzAPfKgsAWdqAP7VANHyckAu7GAKDlAJ2m5sA3Z6AGH_zYBn5VtjvNgGg5N1OwBnum6fNw4qsUmCJAIIVd6AAWACkJNgdQaRlj8daYEwKgY6TjC0q-HoAGYc-NGZdGAqADKMTTUbCEMCkNbUQPETA4VrMUMkCHUaRrUg0ogSdBsRi3ACCbAAkoSaGIuFKW-hmOPWGwuxUgSBB_Rro8m_HoHCd8Y4SBsAqKAnpNRYAAKGMASkPx8U1H-gJBg_Ew7JMLhCJIkYKLUGimI4vihLEvSsB_hS1K0jBjLbMy9CsuyOp8kKYqShI0oSPC7ywAAnAshKdrABaquMCpBKQe51lECxHmoFbAA8kAwAw8JygIBiYYACuqAOAWgAu8YAsCqAA-egB8ZoAXJ6ALLywrjCx1BhBEABMdKCaJkmAHByImAP1-gDScoAL6mACFu9rjK0GxSKQQKqfWjbUAsLDsMo5hLBuJBsF4WIOU2hjcoA9GaAGQqsmAIr-gBtTvpsCABt5gAl0YAXHINk24KwAqbApIOyVOalAiKmksBRjBrwUNAySeFWNaMdlUrOWuFYKt-qXecAvlkP5uWNZ-oJDsO6BYikBVqTBDJMgw6HuRy3KwIAYDqAEV-4qADryCXMCJpkGRKqX4cObBAiorSMQo0AwNQ_FMKQThYvQfjNXtB3wYOcjqpE6QBnhS6wECq7sPI4w_hIwLbgwDEHjBykMLigjsA20hQHAtBOKQ94AA3PjBhGENEAB0w2peRhC431ylvh-wI9f9v7QrC8KIsiqigRi2J4gSRLxqS0IPYhqWjSh41spNmECiKm19dtEjKWxHFw9xKTCHxAU8sJ4nSfJilE8e9mUZq01K7pBkmeZdqpcp-IyEEhDEdrivaYA6tqANOmgA28Q6gBLkYAZXqADwKqUgC4gTS0Y4ZgGzaWXLQDGYzjxVrm5Hm9X1LVtdlCsheFUWxYlNV9Tk0AZR0fk5ZnsB5RQBVFdzsAlWVgQeJVtZ51tkfsA10BNQX8d5yNhddWTLcF7AA2zATHc8zsaH80sU08vNS0rWtG24ZnYs7XdODyPQx3N2djAXa110d7t-04JzsBPZqL1vcO0qpS5bA14xFO1MAZuDs0fWEqQFAKo0HdwVSg6RITmdkIjwmuPb-bRCTploAwJAINqBcE4KLGCbBzyBCbj3OOPl26YWTjJQAYEqABS0_SgAgBnioAB1N3YiVkg6QA3j6ADu3ESgBYOVkmXWiodHgMGiPxHWolADcSq7ISgA_b1MrJYy-CHSAAp1OhIlAC0coASHNAASpljaIslAACRrIsuQDmQKBAbvTCBD9ISgdLqQAp3IikAAhGgBVZUAFRyhjAD6ciY8xEpSGABG_B0-jABY8oASGMXHSIlKZQAXhmAHi9QAufKAEJrQAVfqAHrnYW88-r9wKgWBWsB9H6UAL3aZdAY7jYDgFIE9YBK30vpUy1DADR6oACH_6DZIvPoB0gA87X0qUwA2P_0CkN5PQ9AHSAC0whpJTmnCEfkEWwgBOhwiqUwAkP_12aigsA44ByyFjjtTBsFHi6CSTgghgAuZUAPvqLCQ70XYbANSVt8m8P4UIkRYjJH0LkYo5RMk1Fly3r2bq6DAFjWPvQd-2g7waViL8ngGkeDYwLGjIwXzGA_KaACqFRzYjAufH4PR-DtkSiIZsrZXifF-KCWEqJMSSFxUCoAADkrGAEfbQAoramVEbEzOoALCBCApETCRpABG-oAeATABwZq7IhgB6U0AIDGgA5uVgNEWAgAGJSiLAUypCbYOgSsK2AgA30wYYADb9ABsSoAU-jWVlwXKLRc6AbojloOcdcx8_rG2PAwRwzhXDuC8LYVKmSGAXg3jBL6a4pwiHfJjJBy9GL0AbBAIkFB5Y6noOYCApBzAhs-dQcwMhFTRvWCISGcazoBqDdG-UcIYC2CMCABUm9t5XVugfbAR8BgwTZFVTyEg27LOwKssu3sMqcSIv60AQcKjvgBN3Gtw5NEMAHPa3usEOa_0aNqyZfVcgvL7egY6pBCR3zLsPVC-w9hRkyJwpJIp9KAENzCUCUFortgBlBCwqh6d2brOhZBcB27D2BurdnbhyOqMFU3Jl7-qDTmFEE9OqF5TuHFIGQv0C6cgAFRyGGhqLGL0ABsr0O5yESbAAA7FjAsak0NobUlGA1mc5BFUoljNDAw1JqX_gRvqchNJqSxlGAsAwozwbUtR4cch4OGHozEAY8GVTsYkHINDapSPREiAWNDSGy5yArVELG6Q1Lkfw8h0i8moyREY8RNjPAIOchk89OD2HcPSYLk9VU8nojpAGAMUzhH_6ieiPBqM0QCyCZIE9VD2NtOsYoypgzxHsZ8ctrh9z6AnqaWxmh-DBYCzEWIm55DkQuPCqxvBtDLnLaRDC8fSIInUvOeU8RfzZnIhyexs5l6UZsM5aemp7G6R4vxYGMRWrRzDANZw2hrD2XkOUY6wpsruH4MDDazB7GUZotRmYyVwjakvMMe62h5LaG2uBYY-kLDmRVt9ciwxqMCWCzpHg21lLE2jvDGO21_L521LxbK218rDG1LOfm3Zmjd2BsafSw95DBZNQTeiNpqi58JCg9gIve-sBwbAXploHQ7TYAwTffQZ1p1XXfWnJ6iiL8vK-oYOGyNIbuRhojVG9HYLY3xuDRTz5wBrIpsDnYdNCbadZpUDms6-boJGC3pdBBS9S3lsrdWWut6vJLIhCs_Omdm2-y4kYSoL6_g9q_HOkg96Y3Dt7j_c9MRJ2INSjO3t4v53gIOVDiQmu-hNE6AAUQACKRC4TyXdB7xRHppXHcdF6T1o5vZb_t7z6A2-iPbp3L6AZbiyTk7XI74m_siP-g3F8YIgfmXIMukHoNqga4pyIrW_tqno5RmIvWZPEYw8RaLAxJO1c0gWNLxF-Mvdqyl-jaHXPkZ2zJ_L9HCvJZ0zJuTJebMqkLzJtTkQsbV6GDhvwemDOnzS5tg772OMqlEy5lUR3asOfk0d4rLW9-oen3h4iK29_Een65gsI3Zs0Zeo5_-TmTtJbOzPoHkmsN75u1jFr2m4-e-T2GWM2QOe-9WpGTG0QL2D-HG7WBWUYSB2GQ-Zm_WBWTQcWy2Y2A2_GWGBYm6bWC26QZGrm1ma2A26QjGQOmmbWe2m2d-x2o2fWH-a-VmhBfWf-LGy2F-E-aBT26QZWTGEmbWkBm6zeQOfBhG_2X2x2xEjW4O-qtUZq6saghARgpgFgVgCOcevw0eTqjUQcbq7AHqHQOOPqpag6VOGaFOJOhO5OZ0A4caNhjh9OyaVOaa5ALhdg7OnOdg3Oha_OJa90PuFauUouy6rcku0uHccuraDASuHcKuAeJ6muQ6keo65IPu-uBcAGeEMExuaupu0O5ukRvc1uj644z6O6wo-6h6x6I6Z6z8l6_uJugeVuwe66VRTQGRm4QM76sevRfcP6pQyeuRQGEg6eYGmc2eMGMQmGcWAw5eZmqGeGDGkmfGtWxGAwaWGWSBPeZmmkOxFGzeVGyG7epGEmGkzBve3GOM8hAwGWtWI-cGlWMBtWU-_-MW1evWi-pWy-mQJB0QcBQmm-B-B2R2IJHm--Z-RyL2qB9mp-OMjGKoCJj-1-Si0Wm2Uhj-mkN-SxzeiWBmH-zW4mxWv-A2xESxSmChSWT2IWMQb-BmkBpBQOTmbWAOpG2GLmtebWFmUWaGCWSBUJ4WFGA2QwGkRy6-Qm82A23Wrm_8TJaB62_G8GrGZxMmgKBWy2GkI2p2uBy2wJzG12uBFGsBRJ_BuBQhx2Fpc2kBJBF2IOf2nJ6Qm2iGZGihsA4OkO5qahAARG_EsGgoAAppgAd7qRDIz6R-nI76H-yGHoxbxBmNTq77wHSrzry04Zm7xlypmHw-6ybF45aFHkwnoLpLrq4dG8wshjwu6wBu71Fe6ZxNHeonroCtFFHtFB5Vmjzshfp6H9EtI6AeDtJ9nfoDx_ojroB5GAa5EdxTGmojqZ6TnFGqE7hDGjRtCiDHxT6emG7LmdkdGbnyAyFRC7kXwnpnmenTm8BQ7gwBmJloKAA05oAOGm0ZDqsZqO8ZeMD5yZxRuZh050_OdgWZOW_5R8nGueRZQQKgKRI6ZZFurZsAFRT6PRNRdRHuDRk5zZvuy57ZJZy5q6_Qj6m6qFiFfRO4rSw5uh8eIxE5k505uqs5Zc85S5vcrFI6B5JAMO9A65SFWA7Qyo9GLGA2bGiFi8BcnFG5AluWQlKW2WYlF5ZcV5tUt5Fq95pASZzcCqxkb5fUKOaOQcgZaCKZ-OHyfOO8wFJ02Zrcvq4Fcl0QUFwQsFvc8FZRI61utujuzuaF7unuiF2FuOBceFry7lnRnlEeo5GAH5lFI5ZFwx45Sey5DF55TFBcLFJ67Fvckl0OFqRgvFjIR5uW6QRmIlZ5-RiF2VBV0lEWJVp5ClI6l5W0KlvpNI6lml1AgAXl46UxkDkGUJkaXGV_mmUKDmVXSWUbygW2X5n2WOUwVtGlmlEVka6dGVHVGYT1kYWNne7nqBWZzBVLWVkjxdHVFxUo4xXUW9wJ6jFJVjELxznSAZ4ZUVVxXcX5X8Vbk1VUmlViV9mVXvXKjFVfV1U3UNVKVNXlVKFcAADcQAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://echarts.apache.org/zh/js/vendors/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://echarts.apache.org/zh/js/vendors/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://echarts.apache.org/zh/js/vendors/echarts-graph-modularity/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'svg',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    
+        option = {
+  tooltip: {
+    trigger: 'axis'
+  },
+  legend: {
+    data: ['Time-based', 'Space-based', 'Proposed method'],
+    itemGap: 10,
+    itemWidth: 50,
+    itemHeight: 10,
+    top: 100,
+    right: 100,
+    borderColor: '#808080',
+    borderWidth: 1,
+    backgroundColor: '#F5F5F5',
+
+    orient: 'vertical',
+    align: 'auto',
+    textStyle: {
+      fontFamily: 'Times New Roman',
+      fontSize: 15,
+      color: 'black' // 这里设置颜色
+    },
+    padding: [11, 10, 10, 10] //可设定图例[距上方距离，距右方距离，距下方距离，距左方距离]
+  },
+  grid: {
+    left: '4%',
+    right: '4%',
+    bottom: '5%',
+    top:'3%',
+    containLabel: true
+  },
+  toolbox: {
+    feature: {
+      saveAsImage: {}
+    }
+  },
+  xAxis: {
+    type: 'value',
+    name: 'Sampling rate (%)',
+    nameTextStyle: {
+      fontFamily: 'Times New Roman',
+      fontSize: 15,
+      color: 'black' // 这里设置颜色
+    },
+    min: 9,
+    max: 31,
+    interval: 1,
+    nameLocation: 'middle', // 坐标轴名称显示位置
+    nameGap: 25, // 坐标轴名称与轴线之间的距离
+    boundaryGap: true,
+    axisTick: {
+      show: true, //是否显示网状线 默认为true
+      inside: true,
+      length: 4,
+      alignWithLabel: true
+    },
+    axisLine: {
+      show: true,
+      lineStyle: {
+        width: 2,
+        color: 'black' // 将红色作为x轴的轴线颜色
+      },
+      symbol: ['none', 'arrow'],
+      symbolSize: [10, 15]
+    }
+  },
+  yAxis: [
+    {
+      type: 'value',
+      name: 'Registration error (°)',
+      min: 0.2,
+      max: 2,
+      nameTextStyle: {
+        fontFamily: 'Times New Roman',
+        fontSize: 15,
+        color: 'black' // 这里设置颜色
+      },
+      nameLocation: 'middle', // 坐标轴名称显示位置
+      nameGap: 30, // 坐标轴名称与轴线之间的距离
+      nameRotate: 90, // 坐标轴名字旋转，角度值
+      position: 'left',
+      interval: 0.2,
+      axisTick: {
+        show: true, //是否显示网状线 默认为true
+        inside: true,
+        length: 4,
+        alignWithLabel: true
+      },
+      axisLine: {
+        show: true,
+        lineStyle: {
+          width: 2,
+          color: 'black' // 将红色作为x轴的轴线颜色
+        },
+        symbol: ['none', 'arrow'],
+        symbolSize: [10, 15]
+      },
+
+      axisLabel: {
+        rotate: 0,
+        margin: 10,
+        fontSize: 12,
+        color: 'black',
+        formatter: '{value}'
+      },
+      splitLine: {
+        show: true, // 是否显示分隔线。默认数值轴显示，类目轴不显示
+        interval: '0', // 坐标轴刻度标签的显示间隔，在类目轴中有效.0显示所有
+        color: ['black'], // 分隔线颜色，可以设置成单个颜色，也可以设置成颜色数组，分隔线会按数组中颜色的顺序依次循环设置颜色
+        width: 3, // 分隔线线宽
+        type: 'solid' // 坐标轴线线的类型（'solid'，实线类型；'dashed'，虚线类型；'dotted',点状类型）
+      },
+      splitArea: {
+        show: false, // 是否显示分隔区域
+        interval: 20, // 坐标轴刻度标签的显示间隔，在类目轴中有效.0显示所有
+        areaStyle: {
+          color: ['rgba(250,250,25,0.3)', 'rgba(200,200,200,0.3)'], // 分隔区域颜色。分隔区域会按数组中颜色的顺序依次循环设置颜色。默认是一个深浅的间隔色
+          opacity: 1 // 图形透明度。支持从 0 到 1 的数字，为 0 时不绘制该图形
+        }
+      }
+    }
+  ],
+  series: [
+    {
+      name: 'Proposed method',
+      type: 'line',
+      yAxisIndex: 0,
+      symbol: 'triangle', //'circle', 'rectangle', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+      symbolSize: 8,
+      label: {
+        show: false,
+        position: 'top',
+        textStyle: {
+          color: 'red',
+          fontSize: 10
+        }
+      },
+      itemStyle: {
+        normal: {
+          color: '#FF4500', // 设置线条颜色为红色
+          size: 0,
+          lineStyle: {
+            color: '#FF4500',
+            type: 'solid',
+            width: 1
+          }
+        }
+      },
+      data: [
+        /*[2, 10.1565],
+        [3, 7.327724],
+        [4, 3.782212],
+        [5, 2.438462],
+        [6, 2.108611],
+        [7, 1.701375],
+        [8, 1.52824],
+        [9, 1.414392],*/
+        [10, 1.127725],
+        [11, 1.05885],
+        [12, 1.06403],
+        [13, 0.9262224],
+        [14, 0.869072],
+        [15, 0.7633993],
+        [16, 0.6740901],
+        [17, 0.6482494],
+        [18, 0.6415427],
+        [19, 0.5999989],
+        [20, 0.5777321],
+        [21, 0.5187268],
+        [22, 0.4764844],
+        [23, 0.4737167],
+        [24, 0.4532507],
+        [25, 0.4493356],
+        [26, 0.4350856],
+        [27, 0.4329918],
+        [28, 0.4264235],
+        [29, 0.416718],
+        [30, 0.409231]
+      ]
+    },
+    {
+      name: 'Time-based' ,
+      type: 'line',
+      yAxisIndex: 0,
+      symbol: 'circle', //'circle', 'rectangle', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+      symbolSize: 8,
+      label: {
+        show: false,
+        position: 'top',
+        textStyle: {
+          color: 'red',
+          fontSize: 10
+        }
+      },
+      itemStyle: {
+        normal: {
+          color: '#00CED1', // 设置线条颜色为红色
+          size: 0,
+          lineStyle: {
+            color: '#00CED1',
+            type: 'solid',
+            width: 1
+          }
+        }
+      },
+      data: [
+        /*[2, 10.55219],
+        [3, 12.21101],
+        [4, 7.976837],
+        [5, 3.696126],
+        [6, 2.703827],
+        [7, 2.648162],
+        [8, 2.288119],
+        [9, 1.978077],*/
+        [10, 1.653495],
+        [11, 1.401135],
+        [12, 1.359489],
+        [13, 1.249167],
+        [14, 1.033684],
+        [15, 1.012066],
+        [16, 0.9093732],
+        [17, 0.8992119],
+        [18, 0.7484409],
+        [19, 0.7380264],
+        [20, 0.6444272],
+        [21, 0.6003971],
+        [22, 0.6132345],
+        [23, 0.5780358],
+        [24, 0.5430914],
+        [25, 0.5336568],
+        [26, 0.4950545],
+        [27, 0.4671919],
+        [28, 0.5183813],
+        [29, 0.4596099],
+        [30, 0.456959]
+      ]
+    },
+    {
+      name:  'Space-based',
+      type: 'line',
+      yAxisIndex: 0,
+      symbol: 'rectangle', //'circle', 'rectangle', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow'
+      symbolSize: 8,
+      label: {
+        show: false,
+        position: 'top',
+        textStyle: {
+          color: 'red',
+          fontSize: 10
+        }
+      },
+      itemStyle: {
+        normal: {
+          color: '#FFA500', // 设置线条颜色为红色
+          size: 0,
+          lineStyle: {
+            color: '#FFA500',
+            type: 'solid',
+            width: 1
+          }
+        }
+      },
+      data: [
+        /*[2, 10.33981],
+        [3, 24.43786],
+        [4, 8.674447],
+        [5, 8.229612],
+        [6, 2.713258],
+        [7, 2.295874],
+        [8, 2.164102],
+        [9, 1.863971],*/
+        [10, 1.505704],
+        [11, 1.349354],
+        [12, 1.220262],
+        [13, 1.243112],
+        [14, 1.076539],
+        [15, 1.081963],
+        [16, 0.9980194],
+        [17, 0.9812859],
+        [18, 0.907106],
+        [19, 0.7800906],
+        [20, 0.7274083],
+        [21, 0.7793444],
+        [22, 0.8025205],
+        [23, 0.7303126],
+        [24, 0.6166212],
+        [25, 0.6712568],
+        [26, 0.6710484],
+        [27, 0.6222643],
+        [28, 0.6183563],
+        [29, 0.5735031],
+        [30, 0.5536578]
+      ]
+    },
+    {
+      name:"markLine限差1°线",
+      type: 'line',
+      markLine: {
+        symbol: ['none', 'none'],
+        symbolSize: [8, 12],
+        itemStyle: {
+          normal: {
+            color: 'black', // 设置线条颜色为红色
+            size: 0,
+            lineStyle: {
+              color: 'black',
+              type: 'dashed',
+              width: 1
+            }
+          }
+        },
+        data: [
+          [
+            {
+              name: '',
+              coord: [9, 1]
+            },
+            {
+              coord: [30, 1]
+            }
+          ]
+        ]
+      }
+    },{
+      name:"markLine本文",
+      type: 'line',
+      markLine: {
+        symbol: ['arrow', 'none'],
+        symbolSize: [6, 10],
+        itemStyle: {
+          normal: {
+            color: '#FF4500', // 设置线条颜色为红色
+            size: 0,
+            lineStyle: {
+              color: '#FF4500',
+              type: 'dashed',
+              width: 1
+            }
+          }
+        },
+        data: [
+          [
+            {
+              name: '',
+              coord: [12.46, 0.2]
+            },
+            {
+              coord: [12.46, 1]
+            }
+          ]
+        ]
+      }
+    },{
+      name:"markLine时间",
+      type: 'line',
+      markLine: {
+        symbol: ['arrow', 'none'],
+        symbolSize: [6, 10],
+        itemStyle: {
+          normal: {
+            color: '#00CED1', // 设置线条颜色为红色
+            size: 0,
+            lineStyle: {
+              color: '#00CED1',
+              type: 'dashed',
+              width: 1
+            }
+          }
+        },
+        data: [
+          [
+            {
+              name: '',
+              coord: [15.12, 0.2]
+            },
+            {
+              coord: [15.12, 1]
+            }
+          ]
+        ]
+      }
+    },{
+      name:"markLine空间",
+      type: 'line',
+      markLine: {
+        symbol: ['arrow', 'none'],
+        symbolSize: [6, 10],
+        itemStyle: {
+          normal: {
+            color: '#FFA500', // 设置线条颜色为红色
+            size: 0,
+            lineStyle: {
+              color: '#FFA500',
+              type: 'dashed',
+              width: 1
+            }
+          }
+        },
+        data: [
+          [
+            {
+              name: '',
+              coord: [15.98, 0.2]
+            },
+            {
+              coord: [15.98, 1]
+            }
+          ]
+        ]
+      }
+    },
+  ]
+};
+
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
